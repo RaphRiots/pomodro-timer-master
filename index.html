@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer | Raphael Baptista Rybka</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="chill" style="background-image: url('assets/img/solo.gif');"></div>
+
+    <h1><u>POMODORO TIMER</u></h1>
+    <div class="divi">
+        <figure class="clock">
+          <div class="mins">0</div>
+          <div>:</div>
+          <div class="secs">00</div>
+          <audio
+            src="assets/sound/navi-hey.mp3"
+          ></audio>
+          <svg class="progress-ring" height="250" width="250">
+            <circle
+              class="progress-ring__circle"
+              stroke-width="12"
+              fill="transparent"
+              r="80"
+              cx="100"
+              cy="125"
+            />
+          </svg>
+        </figure>
+      <form action=".">
+        <div class="btn-group">
+          <button class="start">FOCUS</button>
+          <button class="reset">RESET</button>
+          <button class="pause">PAUSE</button>
+        </div>
+        <label for="focusTime"><h3>FOCUS TIME</h3></label>
+        <input type="number" value="1" id="focusTime" />
+        <label for="breakTime"><h3>BREAK TIME</h3></label>
+        <input type="number" value="1" id="breakTime" />
+        <button type="submit"><h3>SET SETTINGS</h3></button>
+      </form>
+    </div>
+
+
+    <footer>
+      CODED BY ABHIK B<br>
+      ADAPTED BY RIO BURB
+
+    </footer>
+
+    <script src="assets/javasript/settings.js"></script>
+    <script src="assets/javasript/timer.js"></script>
+    <script src="assets/javasript/progress.js"></script>
+  </body>
+</html>

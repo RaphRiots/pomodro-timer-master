@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap');
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  color: #ffffff;
+  font-family: "MuseoModerno";
+  position: relative;
+  flex-direction: column;
+
+}
+
+.chill {
+  background-size: cover;
+  background-position: center center;
+  height: 120vh;
+  width: 100%;
+  position: fixed;
+  z-index: -10;
+}
+.divi{
+  display: flex;  
+  flex-direction: column;
+  justify-content:center;
+  margin-left: auto;
+  margin-top:-50px;
+  width: 500px;
+  height:80%;
+}
+h1 {
+  margin: 4px 0;
+  font-weight: 900;
+  font-size: 27px;
+  text-align: center;
+}
+input {
+  transition: 0.5s ease-in-out;
+  margin: 10px 0;
+  font-size: 25px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.11);
+  color: white;
+  border: none;
+  font-family: "MuseoModerno";
+
+}
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  margin: 100px 0;
+/*   border: 3px solid #73AD21; */
+}
+button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  font-size: 18px;
+  transition: 0.5s ease-in-out;
+  font-family: "MuseoModerno";
+
+}
+label {
+  font-size: 12px;
+}
+form {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  max-width: 570px;
+  margin: 5px auto;
+/*   border: 3px solid #73AD21; */
+}
+form button {
+  background: rgba(6, 48, 237);
+  width: 100%;
+  margin: 5px 0;
+  color: white;
+  border-radius: 15px 15px 50px 50px;
+/*   border: 3px solid #73AD21; */
+}
+.start {
+  background: rgb(48, 33, 253);
+  color: white;
+/*   padding-left: 15px;
+ */  border-radius: 50px 0px 0px 15px;
+
+
+}
+.break {
+  background: rgb(0,199, 116);
+  color: #ffffff;
+  border-radius: 50px 0px 0px 15px;
+  padding-left: 10px;
+}
+.reset {
+  background: rgb(232, 81, 152);
+  color: #ffffff;
+  border-radius: 0px;
+}
+.pause {
+  background: #fd115c;
+  color: white;
+  border-radius: 0px 50px 15px 0px;
+  padding-right: 20px;
+}
+.resume {
+  background: rgb(157, 221, 8);
+  color: white;
+  border-radius: 0px 50px 0px 0px;
+  padding-right: 20px;
+
+}
+.clock {
+/*   margin-top:150px;
+  padding-bottom: 50px; */
+  display:flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  height: 20%;
+  bottom:-55px;
+  font-size: 34px;
+/*   border: 3px solid #73AD21; */
+  
+}
+.progress-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+
+.progress-ring__circle {
+  transition: 0.5s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke: rgb(20, 241, 119);
+  animation: pulse 0.99s ease-in-out infinite;
+}
+footer {
+  position: fixed;
+  bottom: 4px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.danger {
+  stroke: rgb(243, 17, 28);
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: rotate(-90deg) scale(1);
+  }
+  50% {
+    transform: rotate(-90deg) scale(1.05);
+  }
+  75% {
+    transform: rotate(-90deg) scale(0.8);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "head head"
+      "clock form"
+      "btns ji";
+  }
+  .btn-group {
+    grid-area: btns;
+    justify-content: center;
+  }
+  .clock {
+    grid-area: clock;
+    height: 100%;
+  }
+  h1 {
+    grid-area: head;
+    align-self: center;
+  }
+  form {
+    align-self: center;
+    justify-self: center;
+    grid-area: form;
+    width: 50%;
+    height: 30%;
+    justify-content: space-around;
+  }
+  footer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  form {
+    height: 40%;
+  }
+  footer {
+    position: static;
+  }
+}
