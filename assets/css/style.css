@@ -1,6 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap');
+ */
+
+
+
+ /* Wiso geht das nicht???? */
+ @font-face {
+  font-family: 'anuratiregular';
+  src: url('assets/fonts/anurati-regular.woff2') format('woff2'),
+       url('assets/fonts/anurati-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+ 
+
 *,
 *::before,
 *::after {
@@ -39,9 +54,10 @@ body {
 }
 h1 {
   margin: 4px 0;
-  font-weight: 900;
-  font-size: 27px;
+  font-weight: 100;
+  font-size: 40px;
   text-align: center;
+  
 }
 input {
   transition: 0.5s ease-in-out;
@@ -106,7 +122,7 @@ form button {
   padding-left: 10px;
 }
 .reset {
-  background: rgb(232, 81, 152);
+  background: rgb(141, 40, 209);
   color: #ffffff;
   border-radius: 0px;
 }
@@ -218,3 +234,6 @@ footer {
     position: static;
   }
 }
+
+
+
