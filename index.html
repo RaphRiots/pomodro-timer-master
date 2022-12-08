@@ -13,7 +13,7 @@
 
     <h1><u>POMODORO TIMER</u></h1>
     <div class="divi">
-        <figure class="clock">
+        <div class="clock">
           <div class="mins">0</div>
           <div>:</div>
           <div class="secs">00</div>
@@ -30,18 +30,19 @@
               cy="125"
             />
           </svg>
-        </figure>
-      <form action=".">
+        </div>
         <div class="btn-group">
           <button class="start">FOCUS</button>
           <button class="reset">RESET</button>
           <button class="pause">PAUSE</button>
         </div>
-        <label for="focusTime"><h3>FOCUS TIME</h3></label>
+      <form action=".">
+
+        <label for="focusTime">FOCUS TIME</label>
         <input type="number" value="1" id="focusTime" />
-        <label for="breakTime"><h3>BREAK TIME</h3></label>
+        <label for="breakTime">BREAK TIME</label>
         <input type="number" value="1" id="breakTime" />
-        <button type="submit"><h3>SET SETTINGS</h3></button>
+        <button type="submit">SET SETTINGS</button>
       </form>
     </div>
 
