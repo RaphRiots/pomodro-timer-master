@@ -1,8 +1,6 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap');
- */
-
 
 
  /* Wiso geht das nicht???? */
@@ -44,11 +42,12 @@ body {
   z-index: -10;
 }
 .divi{
+/*   box-sizing: border-box;
+  border: 1px solid orange; */
   display: flex;  
   flex-direction: column;
   justify-content:center;
-  margin-left: auto;
-  margin-top:-50px;
+ margin: 0 auto;
   width: 500px;
   height:80%;
 }
@@ -71,13 +70,30 @@ input {
 
 }
 .btn-group {
+  /* box-sizing: border-box;
+  border: 1px solid red; */
   display: flex;
+  /* background-color: yellow; */
+  width: 82%;
+  margin: 0 auto;
+  /* display: flex;
   justify-content: space-between;
   align-items: center;
   height: 10%;
-  margin: 100px 0;
+  margin: 100px 0; */
 /*   border: 3px solid #73AD21; */
 }
+
+.btn-group > button {
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  font-size: 18px;
+  transition: 0.5s ease-in-out;
+  font-family: "MuseoModerno";
+}
+
 button {
   margin: 5px;
   padding: 10px;
@@ -95,9 +111,20 @@ form {
   display: flex;
   flex-direction: column;
   padding: 0px;
-  max-width: 570px;
-  margin: 5px auto;
+  max-width: 400px;
+  margin-left: 50px;
+/*   margin: 5px auto; */
+  color:aqua;
+  font-size: 18px;
 /*   border: 3px solid #73AD21; */
+}
+input{
+  background-color: rgb(44, 200, 252);
+  color: black;
+}
+label{
+  font-size: 20px;
+  text-align: center;
 }
 form button {
   background: rgba(6, 48, 237);
@@ -112,8 +139,6 @@ form button {
   color: white;
 /*   padding-left: 15px;
  */  border-radius: 50px 0px 0px 15px;
-
-
 }
 .break {
   background: rgb(0,199, 116);
@@ -148,7 +173,7 @@ form button {
   align-items: center;
   font-weight: bold;
   height: 20%;
-  bottom:-55px;
+  bottom: 55px;
   font-size: 34px;
 /*   border: 3px solid #73AD21; */
   
@@ -157,7 +182,9 @@ form button {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -80%);
+  transform: translate(-50%, -50%);
+  margin-top: -20px;
+
 }
 
 .progress-ring__circle {
@@ -190,48 +217,6 @@ footer {
   }
   75% {
     transform: rotate(-90deg) scale(0.8);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    display: grid;
-    grid-template-areas:
-      "head head"
-      "clock form"
-      "btns ji";
-  }
-  .btn-group {
-    grid-area: btns;
-    justify-content: center;
-  }
-  .clock {
-    grid-area: clock;
-    height: 100%;
-  }
-  h1 {
-    grid-area: head;
-    align-self: center;
-  }
-  form {
-    align-self: center;
-    justify-self: center;
-    grid-area: form;
-    width: 50%;
-    height: 30%;
-    justify-content: space-around;
-  }
-  footer {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  form {
-    height: 40%;
-  }
-  footer {
-    position: static;
   }
 }
 

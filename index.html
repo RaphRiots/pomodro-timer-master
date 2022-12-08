@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pomodoro Timer | Raphael Baptista Rybka</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/download.png">
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap" rel="stylesheet">
   </head>
@@ -20,27 +21,27 @@
           <audio
             src="assets/sound/navi-hey.mp3"
           ></audio>
-          <svg class="progress-ring" height="250" width="250">
+          <svg class="progress-ring" height="200" width="200">
             <circle
               class="progress-ring__circle"
-              stroke-width="12"
+              stroke-width="22"
               fill="transparent"
               r="80"
               cx="100"
-              cy="125"
+              cy="100"
             />
           </svg>
         </div>
         <div class="btn-group">
-          <button class="start">FOCUS</button>
+          <button class="start" onclick="alert('yo')">FOCUS</button>
           <button class="reset">RESET</button>
           <button class="pause">PAUSE</button>
         </div>
       <form action=".">
 
-        <label for="focusTime">FOCUS TIME</label>
+        <label for="focusTime"><u>FOCUS TIME</u></label>
         <input type="number" value="1" id="focusTime" />
-        <label for="breakTime">BREAK TIME</label>
+        <label for="breakTime"><u>BREAK TIME</u></label>
         <input type="number" value="1" id="breakTime" />
         <button type="submit">SET SETTINGS</button>
       </form>

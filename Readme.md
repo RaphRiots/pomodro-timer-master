@@ -1,30 +1,38 @@
-# Pomodoro Timer with 🛎
+# Pomodoro Timer with Sound
 
 This is a simple pomodoro timer built for personal use ( any one can use ) for productivity💯
 
-### It is deployed [here](https://abhik-b.github.io/pomodro-timer/)
 
 ---
-
-## This site is built with :
-
-![HTML5](https://www.w3.org/html/logo/downloads/HTML5_Logo_64.png) ![CSS3](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/48px-CSS3_logo_and_wordmark.svg.png) ![Vanilla JS](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/64px-Unofficial_JavaScript_logo_2.svg.png)
 
 ## Features of this site:
 
-1. Bell plays when timer reaches its end
-2. circular progress indicator
-3. pause,resume and reset timer
-4. save different time limits for focus time and break time
+1. Bell(Hey Listen) plays when timer reaches its end
+2. Circular progress indicator
+3. Pause,resume and reset timer
+4. Save different time limits for focus time and break time, not visible though
 
 ---
 
-# Scores :
+## Links 
+https://www.figma.com/file/bVHwfqgdixrp8TduzxzIJJ/Pomodoro?node-id=0%3A1&t=Pmt1eXm2pCKS8vwQ-1
+1. https://www.figma.com/file/bVHwfqgdixrp8TduzxzIJJ/Untitled?node-id=0%3A1&t=UQxslNSRyXQzfMTv-1 //Figma File
+2. https://www.figma.com/file/bVHwfqgdixrp8TduzxzIJJ/Pomodoro?node-id=0%3A1&t=Pmt1eXm2pCKS8vwQ-1 //Figma File II fals das erste nicht geht.
+3. https://www.youtube.com/watch?v=MtYR2vCs2R0 //Youtube Video of the Product
+4. https://abhik-b.github.io/pomodro-timer/ gitHub data I scrapped
 
-Lighthouse scores:
+---
 
-![Lighthousescore](https://github.com/abhik-b/pomodro-timer/blob/master/lighthouse.png)
+## Documentation
+I was looking in the Internet for a simple but functional Pomodoro Timer, 
+after countless hours of looking at the Code, I noticed that alot of them use 
+different JS codeds and "plug-ins" wich I didnt know, or reconised. 
 
-PageSpeed Insights scores:
+Finaly, on my last Breath if found this Video of Guy wich makes a Timer with
+Vanilla JS, CSS and HTML. He explaind it pretty good, even I could understand
+what he was talking about. 
 
-![Pagespeedinsights](https://github.com/abhik-b/pomodro-timer/blob/master/pagespeedinsights.png)
+Fastforward I made it happen and tweaked around,till it satisfied my Needs. 
+After a strange Error, in wich i put a div into a Form Container it worked all well again. 
+
+So here it is. My Pomodoro Timer with Audio (Hey Listen.)
