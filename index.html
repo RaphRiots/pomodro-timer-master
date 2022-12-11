@@ -4,41 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pomodoro Timer | Raphael Baptista Rybka</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon/download.png">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/img/favicon/download.png"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-
-    <div class="chill" style="background-image: url('assets/img/solo.gif');"></div>
+    <div
+      class="chill"
+      style="background-image: url('assets/img/solo.gif')"
+    ></div>
 
     <h1><u>POMODORO TIMER</u></h1>
     <div class="divi">
-        <div class="clock">
-          <div class="mins">0</div>
-          <div>:</div>
-          <div class="secs">00</div>
-          <audio
-            src="assets/sound/navi-hey.mp3"
-          ></audio>
-          <svg class="progress-ring" height="200" width="200">
-            <circle
-              class="progress-ring__circle"
-              stroke-width="22"
-              fill="transparent"
-              r="80"
-              cx="100"
-              cy="100"
-            />
-          </svg>
-        </div>
-        <div class="btn-group">
-          <button class="start">FOCUS</button>
-          <button class="reset">RESET</button>
-          <button class="pause">PAUSE</button>
-        </div>
+      <div class="clock">
+        <div class="mins">0</div>
+        <div>:</div>
+        <div class="secs">00</div>
+        <audio src="assets/sound/navi-hey.mp3"></audio>
+        <svg class="progress-ring" height="200" width="200">
+          <circle
+            class="progress-ring__circle"
+            stroke-width="22"
+            fill="transparent"
+            r="80"
+            cx="100"
+            cy="100"
+          />
+        </svg>
+      </div>
+      <div class="btn-group">
+        <button class="start">FOCUS</button>
+        <button class="reset">RESET</button>
+        <button class="pause">PAUSE</button>
+      </div>
       <form action=".">
-
         <label for="focusTime"><u>FOCUS TIME</u></label>
         <input type="number" value="1" id="focusTime" />
         <label for="breakTime"><u>BREAK TIME</u></label>
@@ -47,11 +55,9 @@
       </form>
     </div>
 
-
     <footer>
-      CODED BY ABHIK B<br>
+      CODED BY ABHIK B<br />
       ADAPTED BY RIO BURB
-
     </footer>
 
     <script src="assets/javasript/settings.js"></script>

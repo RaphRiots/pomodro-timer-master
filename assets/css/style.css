@@ -1,18 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap");
 
-
- /* Wiso geht das nicht???? */
- @font-face {
-  font-family: 'anuratiregular';
-  src: url('assets/fonts/anurati-regular.woff2') format('woff2'),
-       url('assets/fonts/anurati-regular.woff') format('woff');
+/* Wiso geht das nicht???? */
+@font-face {
+  font-family: "anuratiregular";
+  src: url("assets/fonts/anurati-regular.woff2") format("woff2"),
+    url("assets/fonts/anurati-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-
 }
- 
 
 *,
 *::before,
@@ -30,7 +27,6 @@ body {
   font-family: "MuseoModerno";
   position: relative;
   flex-direction: column;
-
 }
 
 .chill {
@@ -41,22 +37,21 @@ body {
   position: fixed;
   z-index: -10;
 }
-.divi{
-/*   box-sizing: border-box;
+.divi {
+  /*   box-sizing: border-box;
   border: 1px solid orange; */
-  display: flex;  
+  display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   margin: 0 auto;
   width: 500px;
-  height:80%;
+  height: 80%;
 }
 h1 {
-/*   margin: 4px 0; */
+  /*   margin: 4px 0; */
   font-weight: 100;
   font-size: 40px;
   text-align: center;
-  
 }
 input {
   transition: 0.5s ease-in-out;
@@ -67,7 +62,6 @@ input {
   color: white;
   border: none;
   font-family: "MuseoModerno";
-
 }
 .btn-group {
   /* box-sizing: border-box;
@@ -81,7 +75,7 @@ input {
   align-items: center;
   height: 10%;
   margin: 100px 0; */
-/*   border: 3px solid #73AD21; */
+  /*   border: 3px solid #73AD21; */
 }
 
 .btn-group > button {
@@ -101,7 +95,6 @@ button {
   font-size: 18px;
   transition: 0.5s ease-in-out;
   font-family: "MuseoModerno";
-
 }
 label {
   font-size: 12px;
@@ -116,16 +109,16 @@ form {
   padding: 0px;
   max-width: 400px;
   margin-left: 50px;
-/*   margin: 5px auto; */
-  color:aqua;
+  /*   margin: 5px auto; */
+  color: aqua;
   font-size: 18px;
-/*   border: 3px solid #73AD21; */
+  /*   border: 3px solid #73AD21; */
 }
-input{
+input {
   background-color: rgb(44, 200, 252);
   color: black;
 }
-label{
+label {
   font-size: 20px;
   text-align: center;
 }
@@ -135,16 +128,17 @@ form button {
   margin: 5px 0;
   color: white;
   border-radius: 15px 15px 50px 50px;
-/*   border: 3px solid #73AD21; */
+  /*   border: 3px solid #73AD21; */
 }
 .start {
   background: rgb(48, 33, 253);
   color: white;
-/*   padding-left: 15px;
- */  border-radius: 50px 0px 0px 15px;
+  /*   padding-left: 15px;
+ */
+  border-radius: 50px 0px 0px 15px;
 }
 .break {
-  background: rgb(0,199, 116);
+  background: rgb(0, 199, 116);
   color: #ffffff;
   border-radius: 50px 0px 0px 15px;
   padding-left: 10px;
@@ -165,12 +159,11 @@ form button {
   color: white;
   border-radius: 0px 50px 0px 0px;
   padding-right: 20px;
-
 }
 .clock {
-/*   margin-top:150px;
+  /*   margin-top:150px;
   padding-bottom: 50px; */
-  display:flex;
+  display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -178,8 +171,7 @@ form button {
   height: 20%;
   bottom: 55px;
   font-size: 34px;
-/*   border: 3px solid #73AD21; */
-  
+  /*   border: 3px solid #73AD21; */
 }
 .progress-ring {
   position: absolute;
@@ -187,7 +179,6 @@ form button {
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: -20px;
-
 }
 
 .progress-ring__circle {
@@ -222,6 +213,3 @@ footer {
     transform: rotate(-90deg) scale(0.8);
   }
 }
-
-
-
